@@ -1,0 +1,8 @@
+# Angular
+/node_modules/
+/dist/
+/.angular/
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-error.log
