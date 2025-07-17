@@ -7,7 +7,7 @@ A full-stack web application with Laravel backend and Angular frontend, fully do
 1. **Clone and navigate to the project:**
 
    ```bash
-   git clone https://github.com/AhmedElazony/dockerized-web-app
+   git clone https://github.com/AhmedElazony/dockerized-web-app.git
    cd dockerized-web-app
    ```
 
