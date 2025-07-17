@@ -8,6 +8,14 @@ if [ ! -f .env ]; then
     echo "✅ Environment file created"
 fi
 
+if [ ! -f vendor/autoload.php ]; then
+    echo "🔧 Installing Composer dependencies..."
+    composer install --no-interaction --optimize-autoloader
+    echo "✅ Composer dependencies installed"
+else
+    echo "ℹ️  Composer dependencies already installed"
+fi
+
 # Generate APP_KEY if not set
 if grep -q "APP_KEY=base64:your-app-key-here" .env; then
     echo "🔑 Generating Laravel APP_KEY..."
