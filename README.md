@@ -7,7 +7,7 @@ A full-stack web application with Laravel backend and Angular frontend, fully do
 1. **Clone and navigate to the project:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AhmedElazony/dockerized-web-app
    cd dockerized-web-app
    ```
 
@@ -20,6 +20,5 @@ A full-stack web application with Laravel backend and Angular frontend, fully do
 3. **Access the application:**
    - Frontend: http://localhost:4200
    - Backend API: http://localhost:8000/api/start
-   - Database: localhost:3306
 
 That's it! The setup script will automatically:
