@@ -11,7 +11,7 @@ A full-stack web application with Laravel backend and Angular frontend, fully do
    cd dockerized-web-app
    ```
 
-2. **Run the setup script:**
+2. **Setup the application:**
 
    ```bash
    docker-compose build
