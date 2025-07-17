@@ -14,7 +14,9 @@ A full-stack web application with Laravel backend and Angular frontend, fully do
 2. **Run the setup script:**
 
    ```bash
-   ./setup.sh
+   docker-compose build
+
+   docker-compose up -d
    ```
 
 3. **Access the application:**
