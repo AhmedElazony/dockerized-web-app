@@ -13,8 +13,6 @@ RUN apt-get update && apt-get install -y \
     npm \
     libzip-dev \
     nginx \
-    supervisor \
-    netcat-openbsd \
     && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -34,9 +32,6 @@ RUN chmod +x /usr/local/bin/setup.sh
 
 # Copy nginx configuration
 COPY docker/nginx/nginx.conf /etc/nginx/sites-available/default
-
-# Create supervisor log directory
-RUN mkdir -p /var/log/supervisor
 
 EXPOSE 80
 
